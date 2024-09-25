@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MindTrack_Mobile_App</string>
+    <string name="login">Login</string>
+    <string name="loginbtn">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="signupMessage">Not yet registered? SignUp Now</string>
 </resources>
