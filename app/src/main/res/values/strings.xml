@@ -5,4 +5,15 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="signupMessage">Not yet registered? SignUp Now</string>
+    <string name="patientpres_name">Pedro Pablo</string>
+    <string name="patient_name">Nombre Paciente</string>
+    <string name="prescription">Prescription</string>
+    <string name="add_new_medicine">Add New</string>
+    <string name="medication">Medication</string>
+    <string name="save_medication">Save</string>
+    <string name="start_date_medication">Start Date</string>
+    <string name="dosage_frequency_medication">Dosage/Frequency</string>
+    <string name="end_date_medication">End Date</string>
+    <string name="quantity_medication">Quantity</string>
+    <string name="medication_name">Medication Name</string>
 </resources>
