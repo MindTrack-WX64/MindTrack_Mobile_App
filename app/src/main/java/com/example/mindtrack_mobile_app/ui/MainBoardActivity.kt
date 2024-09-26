@@ -1,5 +1,7 @@
 package com.example.mindtrack_mobile_app.ui
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,11 +19,19 @@ class MainBoardActivity : AppCompatActivity() {
 
         // Example data
         val patients = listOf(
-            Patient(1, 1, "John Doe", "123456789","12344@hotmail.com",25),
-            Patient(2, 1, "Jane Smith", "987654321","123456@hotmail.com",25)
+            Patient(1, 1, "John Doe", "123456789", "12344@hotmail.com", 25),
+            Patient(2, 1, "Jane Smith", "987654321", "123456@hotmail.com", 25)
         )
 
         val adapter = PatientAdapter(patients)
         recyclerView.adapter = adapter
+
+        val addPatientButton = findViewById<Button>(R.id.addPatientButton)
+        addPatientButton.setOnClickListener {
+            val intent = Intent(this, AddPatientActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
+
+
