@@ -5,18 +5,20 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.mindtrack_mobile_app.models.User
+import com.example.mindtrack_mobile_app.models.Patient
 
 
-@Database(entities = arrayOf(User::class), version = 1)
-abstract class AppDatabase: RoomDatabase() {
+@Database(entities = [User::class, Patient::class], version = 1)
+abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun getDao():UserDao
+    abstract fun getUserDao(): UserDao
+    abstract fun getPatientDao(): PatientDao
 
-    companion object{
-        private var INSTANCE: AppDatabase?= null
+    companion object {
+        private var INSTANCE: AppDatabase? = null
 
-        fun getInstance(context: Context): AppDatabase{
-            if(INSTANCE ==null){
+        fun getInstance(context: Context): AppDatabase {
+            if (INSTANCE == null) {
                 INSTANCE = Room
                     .databaseBuilder(context, AppDatabase::class.java, "MindTrack.db")
                     .allowMainThreadQueries()

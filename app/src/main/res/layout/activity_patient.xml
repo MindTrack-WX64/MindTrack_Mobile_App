@@ -50,27 +50,85 @@
                     app:srcCompat="@drawable/baseline_person_24" />
 
                 <TextView
-                    android:id="@+id/tvName"
+                    android:id="@+id/tvFullName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/inter"
-                    android:text="Name"
+                    android:text="Full Name"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/ivPerson" />
 
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFullName"
+                    tools:text="Full Name" />
+
                 <TextView
-                    android:id="@+id/tvLastName"
+                    android:id="@+id/tvProfessionalId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/inter"
-                    android:text="LastName"
+                    android:text="Professional ID"
                     android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/etLastName"
-                    app:layout_constraintTop_toBottomOf="@+id/ivPerson" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etFullName" />
+
+                <EditText
+                    android:id="@+id/etProfessionalId"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfessionalId"
+                    tools:text="Professional ID" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Phone"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etProfessionalId" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+                    tools:text="Phone" />
 
                 <TextView
                     android:id="@+id/tvEmail"
@@ -82,96 +140,7 @@
                     android:text="Email"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etName" />
-
-                <TextView
-                    android:id="@+id/tvPassword"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter"
-                    android:text="Password"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etEmail" />
-
-                <TextView
-                    android:id="@+id/tvConfirmPassword"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter"
-                    android:text="Confirm Password"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etPassword" />
-
-                <TextView
-                    android:id="@+id/tvTelephone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter"
-                    android:text="Telephone"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword" />
-
-                <TextView
-                    android:id="@+id/tvBirthday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter"
-                    android:text="Birthday"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etTelephone" />
-
-                <TextView
-                    android:id="@+id/tvDNI"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter"
-                    android:text="DNI"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="@+id/etDNI"
-                    app:layout_constraintTop_toBottomOf="@+id/etTelephone" />
-
-                <EditText
-                    android:id="@+id/etName"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="16dp"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toStartOf="@+id/etLastName"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvName"
-                    tools:text="Name" />
-
-                <EditText
-                    android:id="@+id/etLastName"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="16sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/etName"
-                    app:layout_constraintTop_toBottomOf="@+id/tvLastName"
-                    tools:text="Last Name" />
+                    app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
                 <EditText
                     android:id="@+id/etEmail"
@@ -188,80 +157,32 @@
                     app:layout_constraintTop_toBottomOf="@+id/tvEmail"
                     tools:text="Email" />
 
-                <EditText
-                    android:id="@+id/etPassword"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvPassword"
-                    tools:text="Password" />
-
-                <EditText
-                    android:id="@+id/etConfirmPassword"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvConfirmPassword"
-                    tools:text="Password" />
-
-                <EditText
-                    android:id="@+id/etTelephone"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:ems="10"
-                    android:inputType="phone"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvTelephone" />
-
-                <EditText
-
-                    android:id="@+id/etBirthday"
+                <TextView
+                    android:id="@+id/tvAge"
                     android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-
-
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="32dp"
-                    android:ems="10"
-                    android:focusable="false"
-                    android:hint="Select Date"
-                    android:inputType="date"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toStartOf="@+id/etDNI"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Age"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvBirthday" />
+                    app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
                 <EditText
-                    android:id="@+id/etDNI"
+                    android:id="@+id/etAge"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:layout_marginStart="64dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="32dp"
                     android:ems="10"
                     android:inputType="number"
-                    android:maxLength="8"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/etBirthday"
-                    app:layout_constraintTop_toBottomOf="@+id/tvDNI" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAge"
+                    tools:text="Age" />
 
                 <Button
                     android:id="@+id/btUpload"
@@ -273,7 +194,7 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etBirthday" />
+                    app:layout_constraintTop_toBottomOf="@+id/etAge" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>

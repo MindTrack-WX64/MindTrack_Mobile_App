@@ -4,10 +4,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "Patient")
 data class Patient(
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val id: Int = 0,
 
     @ColumnInfo(name = "professional_id")
     val professionalId: Int,
@@ -23,5 +23,4 @@ data class Patient(
 
     @ColumnInfo(name = "age")
     val age: Int
-
 )
