@@ -38,6 +38,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnNewDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NEW DATE"
